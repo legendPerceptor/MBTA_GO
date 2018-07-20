@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:views="clr-namespace:MyMBTAApp.Views" 
+            x:Class="MyMBTAApp.Views.MainPage">
+
+    <StackLayout VerticalOptions="Center"
+            Margin="20,0,20,0">
+        <Entry x:Name="emailEntry"
+            Placeholder="Email address"
+               TextColor="#1E90FF"
+               Keyboard="Email"
+        />
+        <Entry x:Name="passwordEntry"
+            Placeholder="password"
+               IsPassword="true"
+               TextColor="#1E90FF"
+        />
+        <Button x:Name="LoginButton"
+                Text="Log in"
+                Margin="0,50,0,0"
+                BackgroundColor="#1E90FF"
+                TextColor="White"
+                Clicked="LoginButton_Clicked"
+        />
+       </StackLayout>
+
+    
+</ContentPage>

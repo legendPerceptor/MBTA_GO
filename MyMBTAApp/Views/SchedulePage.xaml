@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="MyMBTAApp.Views.SchedulePage">
+    <ContentPage.Content >
+        <Grid Padding="5,5,5,5">
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height ="Auto" />
+                <RowDefinition Height ="Auto" />
+                <RowDefinition Height ="10" />
+                <RowDefinition Height ="Auto" />
+                <RowDefinition Height ="2*" />
+                <RowDefinition Height ="Auto" />
+                <RowDefinition Height ="1*" />
+            </Grid.RowDefinitions>
+
+
+            <!--  <StackLayout -->
+            <StackLayout Orientation="Horizontal" Grid.Row ="0"
+                 HorizontalOptions="Center" >
+                <Label Text ="Next train from " Font="Large" />
+                <Button Text ="(org)" Font="Large" x:Name ="orgLabel"
+                />
+                <Label Text =" to " Font="Large" />
+                <Button Text = "(dest)" Font ="Large" x:Name ="destLabel"
+                />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Row ="1"
+          HorizontalOptions="Center"       >
+                <Label Text ="Leaves in " Font="Large" />
+                <Label Text ="(mins)" Font="Large" x:Name ="minsLabel" />
+                <Label Text =" minutes. " Font="Large" />
+            </StackLayout>
+
+            <Label Text ="     Train #   |        Departs          |       Arrives" Font="Large"
+          BackgroundColor = "Color.Black" TextColor="Color.White"
+           Grid.Row="3" />
+
+            <ScrollView Grid.Row="4" >
+                <StackLayout x:Name ="TrainStack" />
+            </ScrollView>
+
+            <Label Text="Alerts" FontSize="Large" x:Name="AlertsLabel" Grid.Row="5"/>
+            <ScrollView Grid.Row="6" Padding="5,5">
+                <StackLayout x:Name="AlertStack">
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
