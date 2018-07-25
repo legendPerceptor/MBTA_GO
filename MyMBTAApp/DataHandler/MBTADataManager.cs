@@ -77,5 +77,46 @@ namespace MyMBTAApp.DataHandler
 			}
 			return new DateTime();
 		}
+
+
+
+        public async static Task<List<string>> GetAlerts(string line)
+        {
+
+            string url = Utilities.BaseURL + "alerts?filter[route]=" + line;
+
+            HttpClient client = new HttpClient();
+
+            // Execute the REST API call.
+            HttpResponseMessage response = await client.GetAsync(url);
+
+            // Get the JSON response.
+            string contentString = await response.Content.ReadAsStringAsync();
+
+            // Instantiate return object 
+
+            List<string> retval = new List<string>();
+
+            try
+            {
+                JsonTextReader reader = new JsonTextReader(new StringReader(contentString));
+                JsonSerializer serializer = new JsonSerializer();
+                Alerts.Rootobject ro = (Alerts.Rootobject)serializer.Deserialize(reader, typeof(Alerts.Rootobject));
+
+
+                foreach (Alerts.Datum d in ro.data)
+                {
+                    retval.Add(d.attributes.header);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                retval.Add("Exception: " + ex.ToString());
+            }
+
+            return retval;
+        }
     }
 }

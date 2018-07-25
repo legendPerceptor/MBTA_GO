@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MyMBTAApp.Views.MBTAMainPage">
+    <AbsoluteLayout Padding="10" >
+        <Frame AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3"
+        AbsoluteLayout.LayoutFlags="All" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0"
+                x:Name="Advertisement_image" Source="advert_test.png" 
+                       HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                <Image Grid.Column="1" x:Name="ChangeADs_image" 
+                       Source="right_arrow.png" HeightRequest="24" VerticalOptions="End"/>
+            </Grid>
+
+        </Frame>
+        
+        <Frame AbsoluteLayout.LayoutBounds="0,0.4,1,0.2" Padding="5"
+                 AbsoluteLayout.LayoutFlags="All" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Image x:Name="TravelGuide_Image" Source="briefcase.png"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       Grid.Row="0" Grid.Column="0"
+                       />
+                <Label Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"
+                x:Name="TravelGuide_Text" Text="Travel Guide" FontSize="12"/>
+                
+                <Image x:Name="BuyTickets_Image" Source="card.png"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       Grid.Row="0" Grid.Column="1"
+                       />
+                <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"
+                x:Name="BuyTickets_Text" Text="Buy Tickets" FontSize="12"/>
+
+                <Image x:Name="Schedule_Image" Source="android_earth.png"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       Grid.Row="0" Grid.Column="2"
+                       />
+                <Label Grid.Row="1" Grid.Column="2" HorizontalTextAlignment="Center"
+                x:Name="Schedule_Text" Text="Schedule" FontSize="12"/>
+
+                <Image x:Name="MyOrder_Image" Source="pizza.png"
+                HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                       Grid.Row="0" Grid.Column="3"
+                       />
+                <Label Grid.Row="1" Grid.Column="3" HorizontalTextAlignment="Center"
+                x:Name="MyOrder_Text" Text="My Order" FontSize="12"/>
+            </Grid>
+        </Frame>
+        
+        <Frame AbsoluteLayout.LayoutBounds="0,0.77,1,0.30"
+                 AbsoluteLayout.LayoutFlags="All">
+            <ScrollView x:Name="Alerts_ScrollView">
+                
+            </ScrollView>
+        </Frame>
+        
+        <Frame AbsoluteLayout.LayoutBounds="0,1,1,0.1"
+                 AbsoluteLayout.LayoutFlags="All" Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition Width="3*" />
+                   
+                </Grid.ColumnDefinitions>
+
+                <Frame Grid.Column="0" Padding="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="Discover_image"
+                        Source="discover_icon.png" HeightRequest="32" HorizontalOptions="StartAndExpand" />
+                        <Label x:Name="Discover_text"
+                        Text="Discover" HorizontalOptions="End" VerticalOptions="Center"/>
+                    </StackLayout>
+                   
+
+                    
+                </Frame>
+                
+                <Frame Grid.Column="1" Padding="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="Transfer_image"
+                        Source="train_icon_purple.png" HeightRequest="32" HorizontalOptions="StartAndExpand" />
+                        <Label x:Name="Transfer_text"
+                        Text="Transfer" HorizontalOptions="End" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame Grid.Column="2" Padding="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image x:Name="MyAccount_image"
+                        Source="my_account_icon.png" HeightRequest="32" HorizontalOptions="StartAndExpand" />
+                        <Label x:Name="MyAccount_text"
+                        Text="Account" HorizontalOptions="End" VerticalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+           
+        </Frame>
+        
+    </AbsoluteLayout>
+        
+</ContentPage>

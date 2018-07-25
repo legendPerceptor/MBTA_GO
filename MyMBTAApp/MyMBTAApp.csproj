@@ -13,5 +13,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataHandler\" />
+    <Folder Include="Texts\" />
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Texts\article.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Texts\article.txt" />
   </ItemGroup>
 </Project>

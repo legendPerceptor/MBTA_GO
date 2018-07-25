@@ -7,10 +7,13 @@
         <ToolbarItem Text="Add"
                      Clicked = "ToolbarItem_Clicked"/>
     </TabbedPage.ToolbarItems>
-    <views:AboutPage />
+<!--    <views:AboutPage />-->
+    <views:MBTAMainPage Title="HomePage"/>
     <views:SchedulePage Title="Schedules"/>
-    <views:MapsPage Title="Maps"/>
-    <views:ExperienceList Title="Experience" />
+    <views:MBTAMyAccountPage Title="MyAccount" />
+<!--    <views:MapsPage Title="Maps"/>-->
+<!--    <views:OverlayAbsouluteLayout Title="Layouts"/>-->
+<!--    <views:ExperienceList Title="Experience" />-->
     
     
 </TabbedPage>

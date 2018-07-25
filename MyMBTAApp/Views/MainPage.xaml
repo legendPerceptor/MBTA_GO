@@ -19,8 +19,7 @@
         <Button x:Name="LoginButton"
                 Text="Log in"
                 Margin="0,50,0,0"
-                BackgroundColor="#1E90FF"
-                TextColor="White"
+                Style="{StaticResource normalButton}"
                 Clicked="LoginButton_Clicked"
         />
        </StackLayout>

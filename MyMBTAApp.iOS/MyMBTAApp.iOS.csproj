@@ -69,6 +69,9 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Resources\my_account_icon.png" />
+    <None Include="Resources\train_icon_purple.png" />
+    <None Include="Resources\discover_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -124,6 +127,8 @@
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\mbta_logo.jpg" />
+    <BundleResource Include="Resources\android_earth.png" />
+    <BundleResource Include="Resources\pizza.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -142,5 +147,18 @@
       <Project>{CB79F8B2-7000-4A25-9656-618ED7D0F1EF}</Project>
       <Name>MyMBTAApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Icon.png" />
+    <AndroidResource Include="Resources\advert_test.png" />
+    <AndroidResource Include="Resources\right_arrow.png" />
+    <AndroidResource Include="Resources\card.png" />
+    <AndroidResource Include="Resources\briefcase.png" />
+    <AndroidResource Include="Resources\portrait_default.png" />
+    <AndroidResource Include="Resources\qrcode_icon.png" />
+    <AndroidResource Include="Resources\card_yellow.png" />
+    <AndroidResource Include="Resources\cash_pink.png" />
+    <AndroidResource Include="Resources\picture_icon_green.png" />
+    <AndroidResource Include="Resources\setting_icon_grey.png" />
   </ItemGroup>
 </Project>

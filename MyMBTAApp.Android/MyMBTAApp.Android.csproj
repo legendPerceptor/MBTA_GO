@@ -108,6 +108,22 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
     <AndroidResource Include="Resources\drawable\mbta_logo.jpg" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\my_account_icon.png" />
+    <AndroidResource Include="Resources\drawable\train_icon_purple.png" />
+    <AndroidResource Include="Resources\drawable\discover_icon.png" />
+    <AndroidResource Include="Resources\drawable\advert_test.png" />
+    <AndroidResource Include="Resources\drawable\right_arrow.png" />
+    <AndroidResource Include="Resources\drawable\card.png" />
+    <AndroidResource Include="Resources\drawable\briefcase.png" />
+    <AndroidResource Include="Resources\drawable\android_earth.png" />
+    <AndroidResource Include="Resources\drawable\pizza.png" />
+    <AndroidResource Include="Resources\drawable\portrait_default.png" />
+    <AndroidResource Include="Resources\drawable\qrcode_icon.png" />
+    <AndroidResource Include="Resources\drawable\card_yellow.png" />
+    <AndroidResource Include="Resources\drawable\cash_pink.png" />
+    <AndroidResource Include="Resources\drawable\picture_icon_green.png" />
+    <AndroidResource Include="Resources\drawable\setting_icon_grey.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
